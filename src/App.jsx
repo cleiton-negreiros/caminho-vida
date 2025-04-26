@@ -8,6 +8,7 @@ import Sobre from './pages/Sobre';
 import Programa from './pages/Programa';
 import Depoimentos from './pages/Depoimentos';
 import Contato from './pages/Contato';
+import CaminhoVida from './pages/CaminhoVida';
 
 const AppLayout = () => (
   <>
@@ -28,7 +29,8 @@ const router = createBrowserRouter([
       { path: "/sobre", element: <Sobre /> },
       { path: "/programa", element: <Programa /> },
       { path: "/depoimentos", element: <Depoimentos /> },
-      { path: "/contato", element: <Contato /> }
+      { path: "/contato", element: <Contato /> },
+      { path: "/caminho-vida", element: <CaminhoVida /> }
     ]
   }
 ]);
@@ -38,6 +40,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

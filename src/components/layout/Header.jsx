@@ -52,6 +52,9 @@ const Header = () => {
               <NavItem>
                 <NavLink to="/contato">Contato</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink to="/caminho-vida">Caminho Vida</NavLink>
+              </NavItem>
             </NavList>
           </DesktopNav>
 
@@ -89,6 +92,11 @@ const Header = () => {
           <MobileNavItem>
             <MobileNavLink to="/contato" onClick={toggleMenu}>
               Contato
+            </MobileNavLink>
+          </MobileNavItem>
+          <MobileNavItem>
+            <MobileNavLink to="/caminho-vida" onClick={toggleMenu}>
+              Caminho Vida
             </MobileNavLink>
           </MobileNavItem>
           <MobileNavItem>
