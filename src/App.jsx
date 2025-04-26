@@ -1,24 +1,43 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router';
 import GlobalStyles from './styles/GlobalStyles';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
+import Sobre from './pages/Sobre';
+import Programa from './pages/Programa';
+import Depoimentos from './pages/Depoimentos';
+import Contato from './pages/Contato';
+
+const AppLayout = () => (
+  <>
+    <GlobalStyles />
+    <Header />
+    <main>
+      <Outlet />
+    </main>
+    <Footer />
+  </>
+);
+
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/sobre", element: <Sobre /> },
+      { path: "/programa", element: <Programa /> },
+      { path: "/depoimentos", element: <Depoimentos /> },
+      { path: "/contato", element: <Contato /> }
+    ]
+  }
+]);
 
 function App() {
-  return (
-    <Router>
-      <GlobalStyles />
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* Outras rotas serão adicionadas posteriormente */}
-        </Routes>
-      </main>
-      <Footer />
-    </Router>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
+
+
+

@@ -1,6 +1,6 @@
 // src/components/layout/Footer.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import styled from 'styled-components';
 import { FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 

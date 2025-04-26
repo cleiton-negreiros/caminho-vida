@@ -1,6 +1,5 @@
-// src/components/layout/Header.jsx
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import styled from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -28,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <HeaderContainer scrolled={scrolled}>
+    <HeaderContainer $scrolled={scrolled}>
       <div className="container">
         <HeaderContent>
           <Logo to="/">
@@ -65,7 +64,7 @@ const Header = () => {
       </div>
 
       {/* Menu Mobile */}
-      <MobileNav isOpen={isOpen}>
+      <MobileNav $isOpen={isOpen}>
         <MobileNavList>
           <MobileNavItem>
             <MobileNavLink to="/" onClick={toggleMenu}>
@@ -110,10 +109,10 @@ const HeaderContainer = styled.header`
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: ${({ scrolled }) => 
-    scrolled ? 'var(--white)' : 'transparent'};
-  box-shadow: ${({ scrolled }) => 
-    scrolled ? '0 2px 10px rgba(0, 0, 0, 0.1)' : 'none'};
+  background-color: ${({ $scrolled }) => 
+    $scrolled ? 'var(--white)' : 'transparent'};
+  box-shadow: ${({ $scrolled }) => 
+    $scrolled ? '0 2px 10px rgba(0, 0, 0, 0.1)' : 'none'};
   transition: all 0.3s ease;
   padding: 1rem 0;
 `;
@@ -202,7 +201,7 @@ const MobileNav = styled.nav`
   top: 70px;
   left: 0;
   width: 100%;
-  height: ${({ isOpen }) => (isOpen ? 'calc(100vh - 70px)' : '0')};
+  height: ${({ $isOpen }) => ($isOpen ? 'calc(100vh - 70px)' : '0')};
   background-color: var(--white);
   overflow: hidden;
   transition: height 0.3s ease;
