@@ -41,6 +41,9 @@ const Header = () => {
                 <NavLink to="/">Início</NavLink>
               </NavItem>
               <NavItem>
+                <NavLink to="/caminho-vida">Caminho Vida</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink to="/sobre">Sobre</NavLink>
               </NavItem>
               <NavItem>
@@ -52,13 +55,17 @@ const Header = () => {
               <NavItem>
                 <NavLink to="/contato">Contato</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink to="/caminho-vida">Caminho Vida</NavLink>
-              </NavItem>
             </NavList>
           </DesktopNav>
 
-          <ActionButton to="/inscricao">Quero Começar!</ActionButton>
+          <ActionButton 
+            as="a" 
+            href="https://hotmart.com/pt-br/marketplace/produtos/caminho-vida-reeducacao-alimentar/Y95708139K" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Quero Começar!
+          </ActionButton>
 
           <MobileMenuButton onClick={toggleMenu}>
             {isOpen ? <FaTimes /> : <FaBars />}
@@ -100,7 +107,13 @@ const Header = () => {
             </MobileNavLink>
           </MobileNavItem>
           <MobileNavItem>
-            <MobileActionButton to="/inscricao" onClick={toggleMenu}>
+            <MobileActionButton 
+              as="a" 
+              href="https://hotmart.com/pt-br/marketplace/produtos/caminho-vida-reeducacao-alimentar/Y95708139K" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              onClick={toggleMenu}
+            >
               Quero Começar!
             </MobileActionButton>
           </MobileNavItem>

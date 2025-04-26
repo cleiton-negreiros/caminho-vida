@@ -33,7 +33,7 @@ const SobreContainer = styled.div`
 `;
 
 const HeroSection = styled.div`
-  background-color: var(--light-bg);
+  background: linear-gradient(to bottom, #ffffff, #fff0f3);
   padding: 4rem 2rem;
   text-align: center;
   
@@ -49,19 +49,10 @@ const HeroSection = styled.div`
 `;
 
 const ContentSection = styled.div`
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
-  
-  h2 {
-    color: var(--primary-color);
-    margin: 2rem 0 1rem;
-  }
-  
-  p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-  }
+  background: linear-gradient(to bottom, #fff0f3, #ffffff);
 `;
 
 const ProfileSection = styled.div`

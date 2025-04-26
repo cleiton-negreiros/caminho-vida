@@ -70,7 +70,7 @@ const DepoimentosContainer = styled.div`
 `;
 
 const HeroSection = styled.div`
-  background-color: var(--light-bg);
+  background: linear-gradient(to bottom, #ffffff, #fff0f3);
   padding: 4rem 2rem;
   text-align: center;
   
@@ -89,6 +89,7 @@ const ContentSection = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
+  background: linear-gradient(to bottom, #fff0f3, #ffffff);
 `;
 
 const TestimonialsGrid = styled.div`
@@ -145,7 +146,7 @@ const CTASection = styled.div`
   text-align: center;
   margin: 4rem 0 2rem;
   padding: 3rem;
-  background-color: var(--light-bg);
+  background: linear-gradient(to bottom, #ffffff, #fff0f3);
   border-radius: 8px;
   
   h2 {
@@ -170,4 +171,5 @@ const CTAButton = styled(Link)`
 `;
 
 export default Depoimentos;
+
 

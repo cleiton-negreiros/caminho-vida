@@ -6,36 +6,56 @@ import { FaCheckCircle, FaUserGraduate, FaClock, FaCalendarAlt } from 'react-ico
 const CaminhoVida = () => {
   return (
     <PageContainer>
-      <HeroSection>
+      <HeroSection id="hero">
         <HeroContent>
           <Subtitle>Programa de Transformação</Subtitle>
           <Title>Caminho Vida</Title>
           <Description>
             Reeducação alimentar personalizada para resultados duradouros e uma nova relação com a comida
           </Description>
-          <CTAButton to="/inscricao">Quero Transformar Minha Vida</CTAButton>
+          <CTAButton as="a" href="https://hotmart.com/pt-br/marketplace/produtos/caminho-vida-reeducacao-alimentar/Y95708139K" target="_blank" rel="noopener noreferrer">
+            Quero Transformar Minha Vida
+          </CTAButton>
         </HeroContent>
       </HeroSection>
 
-      <HighlightsSection>
+      <VideoSection id="video">
+        <VideoContainer>
+          <VideoTitle>Quanto tempo você já perdeu buscando soluções rápidas?</VideoTitle>
+          <VideoSubtitle>Assista o conteúdo gratuito que preparei para você:</VideoSubtitle>
+          <ResponsiveVideoWrapper>
+            <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/J8p8a6J59ZY" 
+              title="Conteúdo gratuito sobre reeducação alimentar" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
+          </ResponsiveVideoWrapper>
+        </VideoContainer>
+      </VideoSection>
+
+      <HighlightsSection id="destaques">
         <HighlightCard>
-          <FaUserGraduate size={40} />
+          <FaUserGraduate size={40} aria-hidden="true" />
           <h3>Acompanhamento Personalizado</h3>
           <p>Suporte individual com nutricionista especializada</p>
         </HighlightCard>
         <HighlightCard>
-          <FaClock size={40} />
+          <FaClock size={40} aria-hidden="true" />
           <p>Programa de</p>
           <h3>12 Semanas</h3>
         </HighlightCard>
         <HighlightCard>
-          <FaCalendarAlt size={40} />
+          <FaCalendarAlt size={40} aria-hidden="true" />
           <h3>Próxima Turma</h3>
           <p>Início em 15 de Julho</p>
         </HighlightCard>
       </HighlightsSection>
 
-      <AboutSection>
+      <AboutSection id="sobre-programa">
         <SectionTitle>O Que é o Caminho Vida?</SectionTitle>
         <TwoColumnLayout>
           <div>
@@ -55,108 +75,64 @@ const CaminhoVida = () => {
         </TwoColumnLayout>
       </AboutSection>
 
-      <BenefitsSection>
+      <BenefitsSection id="beneficios">
         <SectionTitle>O Que Você Vai Conquistar</SectionTitle>
         <BenefitsList>
           <BenefitItem>
-            <FaCheckCircle />
+            <FaCheckCircle aria-hidden="true" />
             <p>Perda de peso saudável e duradoura</p>
           </BenefitItem>
           <BenefitItem>
-            <FaCheckCircle />
+            <FaCheckCircle aria-hidden="true" />
             <p>Melhora da disposição e energia no dia a dia</p>
           </BenefitItem>
           <BenefitItem>
-            <FaCheckCircle />
+            <FaCheckCircle aria-hidden="true" />
             <p>Redução de problemas digestivos</p>
           </BenefitItem>
           <BenefitItem>
-            <FaCheckCircle />
+            <FaCheckCircle aria-hidden="true" />
             <p>Melhora de parâmetros clínicos (colesterol, glicemia)</p>
           </BenefitItem>
           <BenefitItem>
-            <FaCheckCircle />
+            <FaCheckCircle aria-hidden="true" />
             <p>Desenvolvimento de hábitos alimentares saudáveis</p>
           </BenefitItem>
           <BenefitItem>
-            <FaCheckCircle />
+            <FaCheckCircle aria-hidden="true" />
             <p>Melhor relação com a comida e seu corpo</p>
           </BenefitItem>
         </BenefitsList>
       </BenefitsSection>
 
-      <ProgramContentSection>
+      <ProgramContentSection id="conteudo-programa">
         <SectionTitle>O Que Inclui o Programa</SectionTitle>
         <ModulesList>
           <ModuleItem>
-            <ModuleNumber>1</ModuleNumber>
+            <ModuleNumber aria-hidden="true">1</ModuleNumber>
             <ModuleContent>
               <h3>Avaliação Inicial Completa</h3>
               <p>Análise detalhada do seu histórico alimentar, rotina, preferências e objetivos para criar um plano totalmente personalizado.</p>
             </ModuleContent>
           </ModuleItem>
           <ModuleItem>
-            <ModuleNumber>2</ModuleNumber>
+            <ModuleNumber aria-hidden="true">2</ModuleNumber>
             <ModuleContent>
               <h3>Plano Alimentar Personalizado</h3>
               <p>Desenvolvimento de um plano alimentar adequado às suas necessidades, preferências e estilo de vida, com opções flexíveis e práticas.</p>
             </ModuleContent>
           </ModuleItem>
           <ModuleItem>
-            <ModuleNumber>3</ModuleNumber>
+            <ModuleNumber aria-hidden="true">3</ModuleNumber>
             <ModuleContent>
               <h3>Consultas Quinzenais</h3>
-              <p>6 consultas de acompanhamento ao longo de 12 semanas para ajustes, orientações e suporte contínuo durante todo o processo.</p>
-            </ModuleContent>
-          </ModuleItem>
-          <ModuleItem>
-            <ModuleNumber>4</ModuleNumber>
-            <ModuleContent>
-              <h3>Material Educativo Exclusivo</h3>
-              <p>Acesso a e-books, guias práticos e vídeos educativos sobre nutrição, preparação de refeições e estratégias para situações desafiadoras.</p>
-            </ModuleContent>
-          </ModuleItem>
-          <ModuleItem>
-            <ModuleNumber>5</ModuleNumber>
-            <ModuleContent>
-              <h3>Grupo de Apoio</h3>
-              <p>Participação em grupo exclusivo com outros participantes para troca de experiências, receitas e motivação mútua.</p>
-            </ModuleContent>
-          </ModuleItem>
-          <ModuleItem>
-            <ModuleNumber>6</ModuleNumber>
-            <ModuleContent>
-              <h3>Suporte Contínuo</h3>
-              <p>Canal direto com a nutricionista para dúvidas e orientações entre as consultas, garantindo que você nunca se sinta desamparado.</p>
+              <p>Acompanhamento regular para ajustes, esclarecimento de dúvidas e suporte contínuo durante todo o programa.</p>
             </ModuleContent>
           </ModuleItem>
         </ModulesList>
       </ProgramContentSection>
 
-      <TestimonialsSection>
-        <SectionTitle>Histórias de Sucesso</SectionTitle>
-        <TestimonialCards>
-          <TestimonialCard>
-            <TestimonialImage src="/placeholder-person1.jpg" alt="Maria Silva" />
-            <TestimonialContent>
-              <p>"O programa Caminho Vida mudou completamente minha relação com a comida. Perdi 15kg em 6 meses de forma saudável e, o mais importante, aprendi a manter meu peso sem sofrimento."</p>
-              <TestimonialName>Maria Silva</TestimonialName>
-              <TestimonialResult>Perdeu 15kg em 6 meses</TestimonialResult>
-            </TestimonialContent>
-          </TestimonialCard>
-          <TestimonialCard>
-            <TestimonialImage src="/placeholder-person2.jpg" alt="João Oliveira" />
-            <TestimonialContent>
-              <p>"Depois de tentar várias dietas sem sucesso, encontrei o Caminho Vida. A abordagem de reeducação alimentar me ajudou a perder peso e melhorar minha saúde de forma sustentável."</p>
-              <TestimonialName>João Oliveira</TestimonialName>
-              <TestimonialResult>Perdeu 20kg em 8 meses</TestimonialResult>
-            </TestimonialContent>
-          </TestimonialCard>
-        </TestimonialCards>
-        <MoreTestimonialsButton to="/depoimentos">Ver Mais Depoimentos</MoreTestimonialsButton>
-      </TestimonialsSection>
-
-      <PricingSection>
+      <PricingSection id="investimento">
         <SectionTitle>Investimento</SectionTitle>
         <PricingCard>
           <PricingHeader>
@@ -169,35 +145,33 @@ const CaminhoVida = () => {
           </PricingValue>
           <PricingFeatures>
             <PricingFeature>
-              <FaCheckCircle />
+              <FaCheckCircle aria-hidden="true" />
               <p>Avaliação inicial completa</p>
             </PricingFeature>
             <PricingFeature>
-              <FaCheckCircle />
+              <FaCheckCircle aria-hidden="true" />
               <p>Plano alimentar personalizado</p>
             </PricingFeature>
             <PricingFeature>
-              <FaCheckCircle />
+              <FaCheckCircle aria-hidden="true" />
               <p>6 consultas de acompanhamento</p>
             </PricingFeature>
             <PricingFeature>
-              <FaCheckCircle />
+              <FaCheckCircle aria-hidden="true" />
               <p>Material educativo exclusivo</p>
             </PricingFeature>
             <PricingFeature>
-              <FaCheckCircle />
+              <FaCheckCircle aria-hidden="true" />
               <p>Grupo de apoio</p>
             </PricingFeature>
-            <PricingFeature>
-              <FaCheckCircle />
-              <p>Suporte contínuo</p>
-            </PricingFeature>
           </PricingFeatures>
-          <PricingCTA to="/inscricao">Quero Começar Agora</PricingCTA>
+          <PricingCTA as="a" href="https://hotmart.com/pt-br/marketplace/produtos/caminho-vida-reeducacao-alimentar/Y95708139K" target="_blank" rel="noopener noreferrer">
+            Quero Participar
+          </PricingCTA>
         </PricingCard>
       </PricingSection>
 
-      <FAQSection>
+      <FAQSection id="perguntas-frequentes">
         <SectionTitle>Perguntas Frequentes</SectionTitle>
         <FAQList>
           <FAQItem>
@@ -212,26 +186,16 @@ const CaminhoVida = () => {
               Não. Nosso programa utiliza alimentos comuns, acessíveis e naturais. Não exigimos a compra de produtos específicos ou suplementos, a menos que haja uma necessidade nutricional identificada durante a avaliação.
             </FAQAnswer>
           </FAQItem>
-          <FAQItem>
-            <FAQQuestion>Quanto tempo leva para ver resultados?</FAQQuestion>
-            <FAQAnswer>
-              Os resultados variam de pessoa para pessoa, mas a maioria dos participantes começa a notar mudanças positivas nas primeiras 2-3 semanas. Além da perda de peso, muitos relatam melhora na disposição, qualidade do sono e digestão logo no início do programa.
-            </FAQAnswer>
-          </FAQItem>
-          <FAQItem>
-            <FAQQuestion>As consultas são presenciais ou online?</FAQQuestion>
-            <FAQAnswer>
-              Oferecemos ambas as opções. Você pode escolher entre consultas presenciais em nosso consultório em São Paulo ou consultas online via videoconferência, de acordo com sua preferência e disponibilidade.
-            </FAQAnswer>
-          </FAQItem>
         </FAQList>
       </FAQSection>
 
-      <CTASection>
+      <CTASection id="comece-agora">
         <CTAContent>
           <h2>Pronto para Transformar sua Relação com a Alimentação?</h2>
           <p>Vagas limitadas para a próxima turma. Garanta já a sua!</p>
-          <CTAButton to="/inscricao">Quero Participar</CTAButton>
+          <CTAButton as="a" href="https://hotmart.com/pt-br/marketplace/produtos/caminho-vida-reeducacao-alimentar/Y95708139K" target="_blank" rel="noopener noreferrer">
+            Quero Participar
+          </CTAButton>
         </CTAContent>
       </CTASection>
     </PageContainer>
@@ -291,6 +255,52 @@ const CTAButton = styled(Link)`
     background-color: var(--primary-dark);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+`;
+
+const VideoSection = styled.section`
+  background-color: #000;
+  padding: 60px 20px;
+  text-align: center;
+`;
+
+const VideoContainer = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+`;
+
+const VideoTitle = styled.h2`
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.5px;
+`;
+
+const VideoSubtitle = styled.p`
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+`;
+
+const ResponsiveVideoWrapper = styled.div`
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
   }
 `;
 
@@ -625,4 +635,11 @@ const CTAContent = styled.div`
 `;
 
 export default CaminhoVida;
+
+
+
+
+
+
+
 

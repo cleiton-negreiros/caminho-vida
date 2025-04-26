@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     --white: #ffffff;
     --gray: #f5f5f5;
     --dark-gray: #666;
+    --light-pink: #fff0f3;
   }
 
   * {

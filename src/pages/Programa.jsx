@@ -67,7 +67,7 @@ const ProgramaContainer = styled.div`
 `;
 
 const HeroSection = styled.div`
-  background-color: var(--light-bg);
+  background: linear-gradient(to bottom, #ffffff, #fff0f3);
   padding: 4rem 2rem;
   text-align: center;
   
@@ -86,18 +86,7 @@ const ContentSection = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
-  
-  h2 {
-    color: var(--primary-color);
-    margin: 2rem 0 1rem;
-    text-align: center;
-  }
-  
-  p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    text-align: center;
-  }
+  background: linear-gradient(to bottom, #fff0f3, #ffffff);
 `;
 
 const StepsContainer = styled.div`
@@ -140,6 +129,8 @@ const StepNumber = styled.div`
 
 const BenefitsSection = styled.div`
   margin: 4rem 0;
+  background: linear-gradient(to bottom, #ffffff, #fff0f3);
+  padding: 3rem 0;
 `;
 
 const BenefitsList = styled.ul`
@@ -181,3 +172,4 @@ const CTAButton = styled(Link)`
 `;
 
 export default Programa;
+
