@@ -18,6 +18,7 @@ const HomeContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 80px; /* Espaço para o header fixo */
 `;
 
 export default Home;
